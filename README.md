@@ -1,29 +1,16 @@
-# README #
+### Summary ###
 
-This README would normally document whatever steps are necessary to get your application up and running.
+* Date: 12.2016 - ...
+* Domain Public: [geleva.com](http://geleva.com)
 
-### What is this repository for? ###
+### Used technologies ###
 
-* Quick summary
-* Version
-* [Learn Markdown](https://bitbucket.org/tutorials/markdowndemo)
+* HTML5+CSS3
+* JS
+* [Materialize 0.97.8](http://materializecss.com)
 
-### How do I get set up? ###
+### Access ###
 
-* Summary of set up
-* Configuration
-* Dependencies
-* Database configuration
-* How to run tests
-* Deployment instructions
-
-### Contribution guidelines ###
-
-* Writing tests
-* Code review
-* Other guidelines
-
-### Who do I talk to? ###
-
-* Repo owner or admin
-* Other community or team contact
+* FTP Hostname: geleva.com
+* Username: geleva-com
+* Password: 5S4f3Y8x
