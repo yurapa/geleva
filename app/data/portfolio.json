@@ -1,7 +1,16 @@
-{
-  "imgUrl": "02.jpg",
-  "author": {
-    "authorName": "Yulia",
-    "authorPhoto": "photo"
+[
+  {
+    "imgUrl": "01.jpg",
+    "author": {
+      "authorName": "Yulia",
+      "authorPhoto": "photo"
+    }
+  },
+  {
+    "imgUrl": "02.jpg",
+    "author": {
+      "authorName": "Yulia",
+      "authorPhoto": "photo"
+    }
   }
-}
+]
