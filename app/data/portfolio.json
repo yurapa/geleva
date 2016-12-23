@@ -12,5 +12,12 @@
       "authorName": "Yulia",
       "authorPhoto": "photo"
     }
+  },
+  {
+    "imgUrl": "03.jpg",
+    "author": {
+      "authorName": "Yulia",
+      "authorPhoto": "photo"
+    }
   }
 ]
