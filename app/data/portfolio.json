@@ -1,23 +1,36 @@
 [
   {
     "imgUrl": "01.jpg",
+    "tag": [
+      "геометрия",
+      "розовый маникюр"
+    ],
     "author": {
-      "authorName": "Yulia",
-      "authorPhoto": "photo"
+      "authorName": "Юлия",
+      "authorPhoto": "yulia.jpg"
     }
   },
   {
     "imgUrl": "02.jpg",
+    "tag": [
+      "ленточки на ногтиках",
+      "морковный"
+    ],
     "author": {
-      "authorName": "Yulia",
-      "authorPhoto": "photo"
+      "authorName": "Юлия",
+      "authorPhoto": "yulia.jpg"
     }
   },
   {
     "imgUrl": "03.jpg",
+    "tag": [
+      "стразы",
+      "черный",
+      "деловой стиль"
+    ],
     "author": {
-      "authorName": "Natasha",
-      "authorPhoto": "photo"
+      "authorName": "Юлия",
+      "authorPhoto": "yulia.jpg"
     }
   }
 ]
