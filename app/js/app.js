@@ -6,8 +6,4 @@
   //mobile menu
   $(".button-collapse").sideNav();
 
-  $.getJSON("../data/portfolio.json", function(json) {
-    console.log(json);
-  });
-
 })();
