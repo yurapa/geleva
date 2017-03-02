@@ -1,51 +1,39 @@
 $(function(){
+    $.getJSON("../data/portfolio.json", function(portfolioData) {
+        var wrapper = $("<div>").addClass("row portfolioList");
 
-  $.getJSON("../data/portfolio.json", function(jsonData) {
-    var pTemplate = $('<div class=dcell></div><img /></div>');
-    $.each(jsonData, function () {
-      var itemImgUrl = this.imgUrl;
-      pTemplate.clone().appendTo("#portfolioList").children()
-        .filter('img').attr('src', itemImgUrl).end();
-      console.log(pTemplate);
+        portfolioData.forEach(function (item) {
+            var gridBox = $("<div>").addClass("col s12 m3"),
+                cardWrapper = $("<div>").addClass("card hoverable"),
+                imageWrapper = $("<div>").addClass("card-image"),
+                image = $("<img />").addClass("materialboxed"),
+                cardContent = $("<div>").addClass("card-content"),
+                tag = $("<div>").addClass("chip"),
+                masterPhoto = $("<img />");
 
+            // Add image
+            $( image ).attr({
+                src: "/images/portfolio/" + item.imgUrl,
+                alt: item.tag
+            }).appendTo( imageWrapper );
+            cardWrapper.append(imageWrapper);
 
-      //var portfolioImgWrapper = "<div class='card-image'>" + portfolioImg + "</div>";
-      //$("<img>").attr({
-      //  "src": './images/portfolio/' + this.imgUrl,
-      //  "class": "materialboxed",
-      //  "alt": ""
-      //}).appendTo("#portfolioList");
+            // Add content, tags
+            cardContent.text(item.tag);
+
+            // Add information about master
+            tag.text(item.author.authorName)
+            $( masterPhoto ).attr({
+              src: "/images/master/" + item.author.authorPhoto,
+              alt: item.author.authorName
+            }).appendTo( tag );
+            cardContent.append(tag);
+
+            cardWrapper.append(cardContent);
+            gridBox.append(cardWrapper);
+            wrapper.append(gridBox);
+        });
+        $("#portfolio .container").append( $(wrapper) );
 
     });
-  });
-
 });
-
-
-
-
-
-
-//(function () {
-
-  //var xmlhttp = new XMLHttpRequest();
-  //xmlhttp.onreadystatechange = function () {
-  //  if (this.readyState == 4 && this.status == 200) {
-  //    jsonData = JSON.parse(this.responseText);
-  //    jsonData.forEach(function (item) {
-  //
-  //      //var portfolioImgWrapper = "<div class='card-image'>" + portfolioImg + "</div>";
-  //      $("<img>").attr({
-  //        "src": './images/portfolio/' + item.imgUrl,
-  //        "class": "materialboxed",
-  //        "alt": ""
-  //      }).appendTo("#portfolioList");
-  //    });
-  //  }
-  //};
-  //xmlhttp.open("GET", "../data/portfolio.json", true);
-  //xmlhttp.send();
-
-
-
-//})();
