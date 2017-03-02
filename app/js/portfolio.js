@@ -1,39 +1,18 @@
-$(function(){
-    $.getJSON("../data/portfolio.json", function(portfolioData) {
-        var wrapper = $("<div>").addClass("row portfolioList");
+var data,
+  xhr = new XMLHttpRequest();
 
-        portfolioData.forEach(function (item) {
-            var gridBox = $("<div>").addClass("col s12 m3"),
-                cardWrapper = $("<div>").addClass("card hoverable"),
-                imageWrapper = $("<div>").addClass("card-image"),
-                image = $("<img />").addClass("materialboxed"),
-                cardContent = $("<div>").addClass("card-content"),
-                tag = $("<div>").addClass("chip"),
-                masterPhoto = $("<img />");
+xhr.open('GET', '/data/portfolio.json', false);
+xhr.send();
 
-            // Add image
-            $( image ).attr({
-                src: "/images/portfolio/" + item.imgUrl,
-                alt: item.tag
-            }).appendTo( imageWrapper );
-            cardWrapper.append(imageWrapper);
+if (xhr.status != 200) {
+  console.log( 'Error: ' + xhr.status + ' -> ' + xhr.statusText );
+} else {
+  data = xhr.responseText;
+}
 
-            // Add content, tags
-            cardContent.text(item.tag);
+data = JSON.parse(data);
 
-            // Add information about master
-            tag.text(item.author.authorName)
-            $( masterPhoto ).attr({
-              src: "/images/master/" + item.author.authorPhoto,
-              alt: item.author.authorName
-            }).appendTo( tag );
-            cardContent.append(tag);
+var tmpl = _.template(document.getElementById('list-template').innerHTML);
+var result = tmpl({data});
 
-            cardWrapper.append(cardContent);
-            gridBox.append(cardWrapper);
-            wrapper.append(gridBox);
-        });
-        $("#portfolio .container").append( $(wrapper) );
-
-    });
-});
+document.getElementById('portfolio').innerHTML = result;

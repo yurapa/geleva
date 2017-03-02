@@ -1,36 +1,278 @@
 [
   {
     "imgUrl": "01.jpg",
-    "tag": [
+    "authorName": "Юлия",
+    "authorPhoto": "yulia.jpg",
+    "tags": [
       "геометрия",
       "розовый маникюр"
-    ],
-    "author": {
-      "authorName": "Юлия",
-      "authorPhoto": "yulia.jpg"
-    }
+    ]
   },
   {
     "imgUrl": "02.jpg",
-    "tag": [
+    "authorName": "Юлия",
+    "authorPhoto": "yulia.jpg",
+    "tags": [
       "ленточки на ногтиках",
       "морковный"
-    ],
-    "author": {
-      "authorName": "Юлия",
-      "authorPhoto": "yulia.jpg"
-    }
+    ]
   },
   {
     "imgUrl": "03.jpg",
-    "tag": [
+    "authorName": "Юлия",
+    "authorPhoto": "yulia.jpg",
+    "tags": [
       "стразы",
       "черный",
       "деловой стиль"
-    ],
-    "author": {
-      "authorName": "Наталия",
-      "authorPhoto": "natasha.jpg"
-    }
+    ]
+  },
+  {
+    "imgUrl": "04.jpg",
+    "authorName": "Юлия",
+    "authorPhoto": "yulia.jpg",
+    "tags": [
+      "геометрия на ногтях"
+    ]
+  },
+  {
+    "imgUrl": "05.jpg",
+    "authorName": "Юлия",
+    "authorPhoto": "yulia.jpg",
+    "tags": [
+      "художестенная розпись"
+    ]
+  },
+  {
+    "imgUrl": "06.jpg",
+    "authorName": "Юлия",
+    "authorPhoto": "yulia.jpg",
+    "tags": [
+      "стразики",
+      "абстракция",
+      "розпись"
+    ]
+  },
+  {
+    "imgUrl": "07.jpg",
+    "authorName": "Юлия",
+    "authorPhoto": "yulia.jpg",
+    "tags": [
+      "инкрустация стразами",
+      "матовый"
+    ]
+  },
+  {
+    "imgUrl": "08.jpg",
+    "authorName": "Юлия",
+    "authorPhoto": "yulia.jpg",
+    "tags": [
+      "французский",
+      "розпись"
+    ]
+  },
+  {
+    "imgUrl": "09.jpg",
+    "authorName": "Юлия",
+    "authorPhoto": "yulia.jpg",
+    "tags": [
+      "стэмпинг",
+      "матовый"
+    ]
+  },
+  {
+    "imgUrl": "10.jpg",
+    "authorName": "Юлия",
+    "authorPhoto": "yulia.jpg",
+    "tags": [
+      "Френч",
+      "стемпинг"
+    ]
+  },
+  {
+    "imgUrl": "11.jpg",
+    "authorName": "Юлия",
+    "authorPhoto": "yulia.jpg",
+    "tags": [
+      "розпись",
+      "новогодний"
+    ]
+  },
+  {
+    "imgUrl": "12.jpg",
+    "authorName": "Юлия",
+    "authorPhoto": "yulia.jpg",
+    "tags": [
+      "геометрия",
+      "стразы",
+      "бульенки"
+    ]
+  },
+  {
+    "imgUrl": "13.jpg",
+    "authorName": "Юлия",
+    "authorPhoto": "yulia.jpg",
+    "tags": [
+      "геометрия",
+      "матовый",
+      "черный"
+    ]
+  },
+  {
+    "imgUrl": "14.jpg",
+    "authorName": "Юлия",
+    "authorPhoto": "yulia.jpg",
+    "tags": [
+      "градиент",
+      "черный",
+      "красный"
+    ]
+  },
+  {
+    "imgUrl": "15.jpg",
+    "authorName": "Юлия",
+    "authorPhoto": "yulia.jpg",
+    "tags": [
+      "скотч-ленты",
+      "стразы",
+      "буленки"
+    ]
+  },
+  {
+    "imgUrl": "16.jpg",
+    "authorName": "Юлия",
+    "authorPhoto": "yulia.jpg",
+    "tags": [
+      "градиент",
+      "фиолетовый"
+    ]
+  },
+  {
+    "imgUrl": "17.jpg",
+    "authorName": "Юлия",
+    "authorPhoto": "yulia.jpg",
+    "tags": [
+      "стразы",
+      "антифренч"
+    ]
+  },
+  {
+    "imgUrl": "18.jpg",
+    "authorName": "Юлия",
+    "authorPhoto": "yulia.jpg",
+    "tags": [
+      "френч с полосками"
+    ]
+  },
+  {
+    "imgUrl": "19.jpg",
+    "authorName": "Юлия",
+    "authorPhoto": "yulia.jpg",
+    "tags": [
+      "стразик",
+      "лунный",
+      "антифренч"
+    ]
+  },
+  {
+    "imgUrl": "20.jpg",
+    "authorName": "Юлия",
+    "authorPhoto": "yulia.jpg",
+    "tags": [
+      "черный",
+      "матовый",
+      "стразы"
+    ]
+  },
+  {
+    "imgUrl": "21.jpg",
+    "authorName": "Юлия",
+    "authorPhoto": "yulia.jpg",
+    "tags": [
+      "стразы",
+      "бульенки",
+      "украшения"
+    ]
+  },
+  {
+    "imgUrl": "22.jpg",
+    "authorName": "Юлия",
+    "authorPhoto": "yulia.jpg",
+    "tags": [
+      "Френч",
+      "точечки"
+    ]
+  },
+  {
+    "imgUrl": "23.jpg",
+    "authorName": "Юлия",
+    "authorPhoto": "yulia.jpg",
+    "tags": [
+      "блестки",
+      "золотой"
+    ]
+  },
+  {
+    "imgUrl": "24.jpg",
+    "authorName": "Юлия",
+    "authorPhoto": "yulia.jpg",
+    "tags": [
+      "инкрустация стразами",
+      "сердечко"
+    ]
+  },
+  {
+    "imgUrl": "25.jpg",
+    "authorName": "Юлия",
+    "authorPhoto": "yulia.jpg",
+    "tags": [
+      "геометрия",
+      "нежный"
+    ]
+  },
+  {
+    "imgUrl": "26.jpg",
+    "authorName": "Наталия",
+    "authorPhoto": "natasha.jpg",
+    "tags": [
+      "блестки",
+      "розпись"
+    ]
+  },
+  {
+    "imgUrl": "27.jpg",
+    "authorName": "Наталия",
+    "authorPhoto": "natasha.jpg",
+    "tags": [
+      "вязанный дизайн",
+      "акрил. пудра"
+    ]
+  },
+  {
+    "imgUrl": "28.jpg",
+    "authorName": "Наталия",
+    "authorPhoto": "natasha.jpg",
+    "tags": [
+      "стемпинг",
+      "цветы"
+    ]
+  },
+  {
+    "imgUrl": "29.jpg",
+    "authorName": "Наталия",
+    "authorPhoto": "natasha.jpg",
+    "tags": [
+      "стемпинг",
+      "паутинка"
+    ]
+  },
+  {
+    "imgUrl": "30.jpg",
+    "authorName": "Наталия",
+    "authorPhoto": "natasha.jpg",
+    "tags": [
+      "лунки",
+      "антифренч"
+    ]
   }
 ]

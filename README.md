@@ -1,11 +1,11 @@
 ### Summary ###
-* test changes for new branch
 
-* Date: 12.2016 - ...
+* Date: 12.2016 - ..
 * Domain Public: [geleva.com](http://geleva.com)
 
 ### Used technologies ###
 
 * HTML5+CSS3
-* JS
-* [Materialize 0.97.8](http://materializecss.com)
+* JS, AJAX
+* [Materialize - v.0.97.8](http://materializecss.com)
+* [Lodash - v.4.17.4](https://lodash.com)
