@@ -11,3 +11,10 @@ main {
 #map {
     height: 400px;
 }
+
+nav {
+  height: 140px;
+}
+nav ul {
+  margin-top: 37px;
+}
