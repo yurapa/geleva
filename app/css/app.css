@@ -18,3 +18,37 @@ nav {
 nav ul {
   margin-top: 37px;
 }
+
+
+.grid-item { width: 25%; }
+
+
+
+
+/* SOCIAL */
+.social {
+    margin: 0;
+    padding-left: 0;
+}
+.social li {
+    display: inline-block;
+    list-style-type: none;
+}
+.social li a {
+    position: relative;
+    display: inline-block;
+    vertical-align: middle;
+    color: #fff;
+    text-align: center;
+    text-decoration: none;
+    -webkit-transition: all .3s;
+    -o-transition: all .3s;
+    transition: all .3s;
+    padding: 2px 8px;
+}
+.social li a:hover {
+    -webkit-transform: rotate(360deg) scale(1.2);
+    -ms-transform: rotate(360deg) scale(1.2);
+    -o-transform: rotate(360deg) scale(1.2);
+    transform: rotate(360deg) scale(1.2);
+}
