@@ -7,6 +7,6 @@ function initMap() {
   var marker = new google.maps.Marker({
     position: {lat: 50.62988, lng: 26.26961},
     map: map,
-    title: 'Hello World!'
+    title: 'Nail Art Studio'
   });
 }
