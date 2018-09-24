@@ -52,3 +52,8 @@ nav ul {
     -o-transform: rotate(360deg) scale(1.2);
     transform: rotate(360deg) scale(1.2);
 }
+
+/* FOOTER */
+.footer-copyright {
+    font-size: 13px;
+}

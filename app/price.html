@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
-    <title>Цены - Nail Art Studio by Julia Paray</title>
+    <title>Ціни - Nail Art Studio by Julia Paray</title>
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <link rel="stylesheet" href="css/materialize.min.css" type="text/css" media="screen,projection">
     <link rel="stylesheet" href="css/app.css">
@@ -13,7 +13,7 @@
     <link rel="apple-touch-icon-precomposed" sizes="72x72" href="/images/favicon/apple-touch-icon-72x72.png">
     <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/images/favicon/apple-touch-icon-144x144.png">
     <link rel="apple-touch-icon-precomposed" sizes="120x120" href="/images/favicon/apple-touch-icon-120x120.png">
-    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="/images/favicon/apple-touch-icon-152x152.png">
+    <link rel="apple-touch-icon-preco   mposed" sizes="152x152" href="/images/favicon/apple-touch-icon-152x152.png">
     <link rel="icon" type="image/png" href="/images/favicon/favicon-32x32.png" sizes="32x32">
     <link rel="icon" type="image/png" href="/images/favicon/favicon-16x16.png" sizes="16x16">
     <meta name="msapplication-TileColor" content="#FFFFFF">
@@ -57,53 +57,10 @@
 
   <section>
     <div class="container">
-        <h2>Вартість наших послуг</h2>
         <div id="price">
 
 
-          <script type="text/template" id="price-template">
-              <table class="bordered highlight responsive-table">
-                  <tr>
-                      <th data-field="name">Назва послуги</th>
-                      <th data-field="price">Ціна, ГРН</th>
-                  </tr>
-                  <% data.forEach(function(item) { %>
-                  <% if(item.mainTable == true) { %>
-                  <tr>
-                      <td><%- item.name %></td>
-                      <td>
-                          <% if(item.cost == 0) { %>
-                              безкоштовно
-                          <% } else { %>
-                              <%- item.cost %>
-                          <% } %>
-                      </td>
-                  </tr>
-                  <% } %>
-                  <% }); %>
-              </table>
-              <h2>Додаткові послуги</h2>
-              <table class="bordered highlight responsive-table">
-                  <tr>
-                      <th data-field="name">Назва послуги</th>
-                      <th data-field="price">Ціна, ГРН</th>
-                  </tr>
-                  <% data.forEach(function(item) { %>
-                      <% if(item.mainTable == false) { %>
-                      <tr>
-                          <td><%- item.name %></td>
-                          <td>
-                              <% if(item.cost == 0) { %>
-                                  безкоштовно
-                              <% } else { %>
-                                  <%- item.cost %>
-                              <% } %>
-                          </td>
-                      </tr>
-                      <% } %>
-                  <% }); %>
-              </table>
-          </script>
+
 
       </div>
     </div>
@@ -143,7 +100,7 @@
     </div>
     <div class="footer-copyright">
         <div class="container">
-            &copy; Copyrighted at Geleva.com
+            &copy; Copyrighted at Geleva.site
             <a class="grey-text text-lighten-4 right" href="https://www.linkedin.com/in/yuriyparay" target="_blank">&lt;/&gt; Developed by Yuriy Paray</a>
         </div>
     </div>
@@ -152,12 +109,62 @@
 
     <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
     <script src="js/materialize.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/lodash/4.17.4/lodash.min.js"></script>
     <script src="https://use.fontawesome.com/3ee2fc9d76.js"></script>
-    <script src="js/app.js"></script>
-    <script>
-        ajaxGoToJsonFile('/data/price.json', 'price-template', 'price');
+
+
+    <script src="https://cdn.jsdelivr.net/lodash/4.17.4/lodash.min.js"></script>
+
+    <script type="text/template" id="price-template">
+        <h2>Вартість наших послуг</h2>
+        <table class="bordered highlight responsive-table">
+            <tr>
+                <th data-field="name">Назва послуги</th>
+                <th data-field="price">Ціна, ГРН</th>
+            </tr>
+            <% data.forEach(function(item) { %>
+            <% if(item.isBasicService == true) { %>
+            <tr>
+                <td><%- item.name.uk %></td>
+                <td>
+                    <% if (item.price.min == 0 || item.price.max == 0) { %>
+                        безкоштовно
+                    <% } else if (item.price.min == item.price.max) { %>
+                        <%- item.price.min %>
+                    <% } else { %>
+                        <%- item.price.min %> - <%- item.price.max %>
+                    <% } %>
+                </td>
+            </tr>
+            <% } %>
+            <% }); %>
+        </table>
+        <h2>Додаткові послуги</h2>
+        <table class="bordered highlight responsive-table">
+            <tr>
+                <th data-field="name">Назва послуги</th>
+                <th data-field="price">Ціна, ГРН</th>
+            </tr>
+            <% data.forEach(function(item) { %>
+            <% if(item.isBasicService == false) { %>
+            <tr>
+                <td><%- item.name.uk %></td>
+                <td>
+                    <% if (item.price.min == 0 || item.price.max == 0) { %>
+                        безкоштовно
+                    <% } else if (item.price.min == item.price.max) { %>
+                        <%- item.price.min %>
+                    <% } else { %>
+                        <%- item.price.min %> - <%- item.price.max %>
+                    <% } %>
+                </td>
+            </tr>
+            <% } %>
+            <% }); %>
+        </table>
     </script>
 
+
+    <script src="js/app.js"></script>
+    <script src="js/price.js"></script>
 </body>
 </html>

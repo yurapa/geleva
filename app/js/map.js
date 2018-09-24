@@ -1,6 +1,5 @@
-var OFFICE_POSITION = {lat: 50.62988, lng: 26.26961},
+var OFFICE_POSITION = {lat: 50.5055659, lng: 30.4504505},
     YOUR_POSITION;
-
 
 function initMap() {
     var directionsService = new google.maps.DirectionsService,
@@ -8,7 +7,7 @@ function initMap() {
 
     var map = new google.maps.Map(document.getElementById('map'), {
         center: OFFICE_POSITION,
-        zoom: 17
+        zoom: 16
     });
 
     directionsDisplay.setMap(map);
