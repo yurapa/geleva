@@ -6,16 +6,15 @@ function getPrice() {
     xhttp.onreadystatechange = function() {
         if (this.readyState == 4 && this.status == 200) {
             data = JSON.parse(this.responseText);
+            result = tmpl({ data });
+            document.getElementById("price").innerHTML = result;
         }
     };
-    xhttp.open("GET", "https://nails-api.herokuapp.com/api/price", false);
+    xhttp.open("GET", "https://nails-api.herokuapp.com/api/price", true);
     xhttp.send();
-
-    result = tmpl({ data });
-    document.getElementById("price").innerHTML = result;
 }
 
-$(document).ready(function(){
+document.addEventListener("DOMContentLoaded", function() {
     getPrice();
     setInterval(getPrice,60000);
 });
